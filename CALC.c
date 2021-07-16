@@ -5,7 +5,8 @@
 /*--------------------------------------------------------------------*/
 #include <stdio.h>
 #include <stdlib.h>
-#include "calc.h"
+/*calc.h changed into CALC.h  */
+#include "CALC.h"
 IntStack stack = { 0 };
 main()
 {
@@ -41,7 +42,7 @@ main()
         break;
       case T_EQUALS:
         num = pop(&stack);
-		sprintf(buf_out,"= %d ",num);
+		printf(buf_out,"= %d ",num);
         push(&stack,num);
         break;
     }

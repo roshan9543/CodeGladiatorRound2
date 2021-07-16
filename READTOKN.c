@@ -4,7 +4,8 @@
 /*--------------------------------------------------------------------*/
 #include <ctype.h>
 #include <stdio.h>
-#include "calc.h"
+/*calc.h changed into CALC.h  */
+#include "CALC.h"
 /*--------------------------------------------------------------------*/
 /* action: get next input char, update index for next call            */
 /* return: next input char                                            */

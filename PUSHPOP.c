@@ -3,13 +3,15 @@
 /* A push and pop function for a stack of integers                    */
 /*--------------------------------------------------------------------*/
 #include <stdlib.h>
-#include "calc.h"
+/*calc.h changed into CALC.h  */
+#include "CALC.h"
 /*--------------------------------------------------------------------*/
 /* input:  stk - stack of integers                                    */
 /*         num - value to push on the stack                           */
 /* action: get a link to hold the pushed value, push link on stack    */
 /*                                                                    */
-extern void push(IntStack * stk, int num)
+/*  WE REMOVED extern   */
+void push(IntStack * stk, int num)
 {
   IntLink * ptr;
   ptr       = (IntLink *) malloc( sizeof(IntLink));  /*  PUSHPOP1   */
@@ -23,7 +25,8 @@ extern void push(IntStack * stk, int num)
 /* return: int value popped from stack                                */
 /* action: pops top element from stack and gets return value from it  */
 /*--------------------------------------------------------------------*/
-extern int pop(IntStack * stk)
+/*  WE REMOVED extern   */
+int pop(IntStack * stk)
 {
   IntLink * ptr;
   int num;
